@@ -4,7 +4,7 @@
 
 ### 老师蒸馏 + 期末求生
 
-> `Professor Skill` for exam review and professor-style guidance
+> A professor-distilled skill for finals survival
 
 > "这题我上课讲过。"
 >
@@ -35,6 +35,8 @@
 <br>
 
 **欢迎加入赛博划重点。**
+
+老师不划重点，那就自己造一个会划重点的老师。
 
 [30 秒看懂](#30-秒看懂) · [效果示例](#效果示例) · [为什么不是普通复习资料整理器](#为什么不是普通复习资料整理器) · [工作流程](#工作流程) · [快速开始](#快速开始)
 
@@ -68,9 +70,15 @@ professor-workspace/
 review_guide.md
 ├── 30 秒总结
 ├── Must Know
+├── 高频题型
 ├── 老师可能会这么问
 ├── 高频扣分点
 └── 考前一晚清单
+
+review_guide.md
+- 高频考点：特征值、二次型、正定矩阵
+- 高频题型：证明题、计算题、解释题
+- 扣分提醒：只写结论不给依据，通常拿不到高分
 ```
 
 ## 效果示例
@@ -135,9 +143,9 @@ review_guide.md
 - ✅ 材料清单与证据摘要
 - ✅ 单命令构建流程
 - ✅ 严格校验，避免空模板伪装成可用结果
-- ⏳ 扫描件 OCR
-- ⏳ 图片 / 音频输入
-- ⏳ 更多示例课程模板
+- ⏳ 扫描件 OCR 支持
+- ⏳ 图片 / 音频输入链路
+- ⏳ 更多课程模板与公开示例
 
 ## 支持的材料类型
 
@@ -153,6 +161,18 @@ review_guide.md
 | 扫描版 PDF / 图片 / 音频 | ⚠️ | 只建议先转成文本再导入 |
 
 ## 快速开始
+
+### 0. 安装依赖
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+或者：
+
+```bash
+uv pip install -r requirements.txt
+```
 
 ### 在 Skill 环境中调用
 
@@ -220,27 +240,13 @@ git clone https://github.com/CommitHu502Craft/professor-skill.git .claude/skills
 git clone https://github.com/CommitHu502Craft/professor-skill.git ~/.claude/skills/professor-skill
 ```
 
-### 依赖安装
+## 核心能力
 
-```bash
-python -m pip install -r requirements.txt
-```
-
-### `uv` 方式
-
-```bash
-uv pip install -r requirements.txt
-```
-
-## 功能特性
-
-### 生成的三份核心产物
-
-| 文件 | 作用 |
-|------|------|
-| `persona.md` | 老师怎么说话、怎么答疑、怎么暗示重点 |
-| `course.md` | 这门课的核心结构、题型信号、常见陷阱 |
-| `review_guide.md` | 面向学生的压缩版期末复习资料 |
+- 证据驱动的重点识别，而不是只压缩原文
+- 老师风格与问法模拟，而不是通用答疑口吻
+- 高频扣分点提炼，而不是只列知识点目录
+- 材料不足时主动降级，而不是一本正经乱猜
+- 输出 `persona.md / course.md / review_guide.md` 三份结构化产物
 
 ## 项目结构
 
