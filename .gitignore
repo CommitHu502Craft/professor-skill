@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+knowledge/
+exports/
+temp/
+temp_smoke/
+
+professors/*/
+!professors/example_linear-algebra-liu/
+!professors/example_linear-algebra-liu/**

@@ -1,0 +1,8 @@
+interface:
+  display_name: "Professor Skill"
+  short_description: "把老师蒸馏成会划重点的 Skill"
+  brand_color: "#D97706"
+  default_prompt: "Use $professor-skill to turn a university course and professor into a review-first, teacher-style skill."
+
+policy:
+  allow_implicit_invocation: true

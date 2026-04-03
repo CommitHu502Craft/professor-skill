@@ -1,0 +1,38 @@
+[
+  {
+    "path": "materials/chats/group-qa.txt",
+    "category": "chats",
+    "bytes": 316,
+    "extract_status": "ok",
+    "extracted_path": "exports/extracted/chats/group-qa.txt.txt",
+    "text_length": 111,
+    "extractor": "text"
+  },
+  {
+    "path": "materials/exams/2025-final-sample.txt",
+    "category": "exams",
+    "bytes": 425,
+    "extract_status": "ok",
+    "extracted_path": "exports/extracted/exams/2025-final-sample.txt.txt",
+    "text_length": 164,
+    "extractor": "text"
+  },
+  {
+    "path": "materials/syllabus/course-outline.md",
+    "category": "syllabus",
+    "bytes": 449,
+    "extract_status": "ok",
+    "extracted_path": "exports/extracted/syllabus/course-outline.md.txt",
+    "text_length": 190,
+    "extractor": "text"
+  },
+  {
+    "path": "materials/transcripts/lecture-09.txt",
+    "category": "transcripts",
+    "bytes": 452,
+    "extract_status": "ok",
+    "extracted_path": "exports/extracted/transcripts/lecture-09.txt.txt",
+    "text_length": 155,
+    "extractor": "text"
+  }
+]

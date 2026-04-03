@@ -1,0 +1,71 @@
+{
+  "name": "刘老师（示例）",
+  "slug": "example_linear-algebra-liu",
+  "created_at": "2026-04-03T00:00:00Z",
+  "updated_at": "2026-04-03T00:00:00Z",
+  "profile": {
+    "school": "某工科大学",
+    "department": "数学学院",
+    "course": "线性代数"
+  },
+  "tags": {
+    "persona": [
+      "嘴上说不难",
+      "喜欢从定义出发",
+      "会在黑板上重复写同一个变换",
+      "群里回复短"
+    ],
+    "course": [
+      "重计算也重理解",
+      "特征值与二次型高频",
+      "证明题喜欢考充要条件"
+    ]
+  },
+  "sources": [
+    {
+      "path": "materials/chats/group-qa.txt",
+      "category": "chats",
+      "bytes": 316,
+      "extract_status": "ok",
+      "extracted_path": "exports/extracted/chats/group-qa.txt.txt",
+      "text_length": 111,
+      "extractor": "text"
+    },
+    {
+      "path": "materials/exams/2025-final-sample.txt",
+      "category": "exams",
+      "bytes": 425,
+      "extract_status": "ok",
+      "extracted_path": "exports/extracted/exams/2025-final-sample.txt.txt",
+      "text_length": 164,
+      "extractor": "text"
+    },
+    {
+      "path": "materials/syllabus/course-outline.md",
+      "category": "syllabus",
+      "bytes": 449,
+      "extract_status": "ok",
+      "extracted_path": "exports/extracted/syllabus/course-outline.md.txt",
+      "text_length": 190,
+      "extractor": "text"
+    },
+    {
+      "path": "materials/transcripts/lecture-09.txt",
+      "category": "transcripts",
+      "bytes": 452,
+      "extract_status": "ok",
+      "extracted_path": "exports/extracted/transcripts/lecture-09.txt.txt",
+      "text_length": 155,
+      "extractor": "text"
+    }
+  ],
+  "notes": [
+    "Exam materials are present and should dominate review and likely-question synthesis.",
+    "Persona evidence exists from conversational sources."
+  ],
+  "artifacts": {
+    "extraction_index": "exports/extracted/index.json",
+    "build_status": "generated",
+    "last_built_at": "2026-04-03T01:14:48+00:00"
+  }
+}
