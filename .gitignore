@@ -1,6 +1,12 @@
 __pycache__/
 *.pyc
 .DS_Store
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.idea/
+.vscode/
 
 knowledge/
 exports/

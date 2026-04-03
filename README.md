@@ -2,9 +2,9 @@
 
 # 大学老师.skill
 
-### Professor Skill
+### 老师蒸馏 + 期末求生
 
-#### 老师蒸馏 + 期末求生
+> `Professor Skill` for exam review and professor-style guidance
 
 > "这题我上课讲过。"
 >
@@ -36,7 +36,7 @@
 
 **欢迎加入赛博划重点。**
 
-[30 秒看懂](#30-秒看懂) · [效果示例](#效果示例) · [功能特性](#功能特性) · [使用](#使用) · [安装](#安装)
+[30 秒看懂](#30-秒看懂) · [效果示例](#效果示例) · [为什么不是普通复习资料整理器](#为什么不是普通复习资料整理器) · [工作流程](#工作流程) · [快速开始](#快速开始)
 
 </div>
 
@@ -54,6 +54,24 @@
 
 它不承诺“精准押题”。
 它做的是：把零散课程上下文压缩成一个更像老师 / 助教 / 学长混合体的复习入口。
+
+## 生成产物预览
+
+```text
+professor-workspace/
+├── persona.md
+├── course.md
+├── review_guide.md
+├── materials_manifest.md
+└── source_brief.md
+
+review_guide.md
+├── 30 秒总结
+├── Must Know
+├── 老师可能会这么问
+├── 高频扣分点
+└── 考前一晚清单
+```
 
 ## 效果示例
 
@@ -76,17 +94,7 @@
 
 > 它不是普通笔记总结器，更像一个期末周随叫随到的老师 / 助教 / 学长混合体。
 
-## 功能特性
-
-### 生成的三份核心产物
-
-| 文件 | 作用 |
-|------|------|
-| `persona.md` | 老师怎么说话、怎么答疑、怎么暗示重点 |
-| `course.md` | 这门课的核心结构、题型信号、常见陷阱 |
-| `review_guide.md` | 面向学生的压缩版期末复习资料 |
-
-### 它为什么不是普通复习资料整理器
+## 为什么不是普通复习资料整理器
 
 | 普通总结器 | 大学老师.skill |
 |------|------|
@@ -95,7 +103,7 @@
 | 输出通用笔记 | 输出 `persona.md / course.md / review_guide.md` |
 | 容易一本正经瞎猜 | 明确标注低置信度和材料缺口 |
 
-### How it works
+## 工作流程
 
 ```text
 课程材料
@@ -113,20 +121,23 @@
 - review_guide.md
 ```
 
-### Design principles
+## 设计原则
 
 - 没有考试材料时，不假装押题
 - 没有聊天和转写时，不强行模拟人格
 - 材料越接近真实教学现场，结果越可信
 - 优先输出高置信度重点，而不是看起来很完整的废话
 
-### 当前已实现
+## 当前状态
 
-- 老师工作区脚手架
-- `pdf / pptx / docx` 文本抽取
-- 材料清单和证据摘要
-- 单命令构建流程
-- 严格校验，避免空模板伪装成可用结果
+- ✅ 老师工作区脚手架
+- ✅ `pdf / pptx / docx` 文本抽取
+- ✅ 材料清单与证据摘要
+- ✅ 单命令构建流程
+- ✅ 严格校验，避免空模板伪装成可用结果
+- ⏳ 扫描件 OCR
+- ⏳ 图片 / 音频输入
+- ⏳ 更多示例课程模板
 
 ## 支持的材料类型
 
@@ -141,7 +152,7 @@
 | `ppt / key` | ⚠️ | 只收录，不自动解析正文 |
 | 扫描版 PDF / 图片 / 音频 | ⚠️ | 只建议先转成文本再导入 |
 
-## 使用
+## 快速开始
 
 ### 在 Skill 环境中调用
 
@@ -199,15 +210,14 @@ python tools/smoke_test.py
 ### Claude Code
 
 > 仓库本身就是一个 skill 目录。安装后用 `$professor-skill` 调用。
-> 发布时请把下面的仓库地址替换成你自己的公开仓库地址。
 
 ```bash
 # 安装到当前项目（在 git 仓库根目录执行）
 mkdir -p .claude/skills
-git clone https://github.com/YOUR_NAME/professor-skill .claude/skills/professor-skill
+git clone https://github.com/CommitHu502Craft/professor-skill.git .claude/skills/professor-skill
 
 # 或安装到全局（所有项目都能用）
-git clone https://github.com/YOUR_NAME/professor-skill ~/.claude/skills/professor-skill
+git clone https://github.com/CommitHu502Craft/professor-skill.git ~/.claude/skills/professor-skill
 ```
 
 ### 依赖安装
@@ -221,6 +231,16 @@ python -m pip install -r requirements.txt
 ```bash
 uv pip install -r requirements.txt
 ```
+
+## 功能特性
+
+### 生成的三份核心产物
+
+| 文件 | 作用 |
+|------|------|
+| `persona.md` | 老师怎么说话、怎么答疑、怎么暗示重点 |
+| `course.md` | 这门课的核心结构、题型信号、常见陷阱 |
+| `review_guide.md` | 面向学生的压缩版期末复习资料 |
 
 ## 项目结构
 
