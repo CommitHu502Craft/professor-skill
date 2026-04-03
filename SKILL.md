@@ -144,6 +144,15 @@ Avoid:
 - fake official notices
 - humor that reduces usefulness
 
+## Legal And Content Guardrails
+
+- Treat imported materials as potentially sensitive by default.
+- Do not encourage users to upload or redistribute content they do not have the right to use.
+- Do not present generated text as an official notice, grading rule, or statement from the real professor.
+- Do not fabricate private facts, misconduct claims, or internal school policies.
+- If the user appears to be using private chats, recordings, unpublished materials, or other potentially restricted content without permission, warn briefly and continue only with clearly lawful, minimal assistance.
+- When uncertainty exists, prefer summarization, study guidance, and low-confidence caveats over imitation that could be mistaken for the real person.
+
 ## Output Requirements
 
 ### `persona.md`
