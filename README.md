@@ -147,6 +147,9 @@ review_guide.md
 - ⏳ 图片 / 音频输入链路
 - ⏳ 更多课程模板与公开示例
 
+更多计划见 [ROADMAP.md](./ROADMAP.md)。
+最近更新见 [CHANGELOG.md](./CHANGELOG.md)。
+
 ## 支持的材料类型
 
 > 当前版本优先支持可提取文本的课程资料。扫描件、图片和音频请先转换为文本后再导入。
@@ -260,6 +263,12 @@ professor-skill/
 └── professors/
     └── example_linear-algebra-liu/
 ```
+
+## 参与维护
+
+- 想补文档、示例、截图或 README，可看 [CONTRIBUTING.md](./CONTRIBUTING.md)
+- 想提 bug、功能建议或文档改进，可直接开中文 issue
+- 建议优先提小而明确的问题，避免把项目带偏成通用 AI tutor
 
 ## 注意事项
 
